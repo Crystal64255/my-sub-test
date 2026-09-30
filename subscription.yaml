@@ -8,11 +8,11 @@ proxies:
     udp: true
 
 proxy-groups:
-  - name: "住宅IP"
+  - name: "IPRoyal住宅IP"
     type: select
     proxies:
       - "🇺🇸 IPRoyal-美国住宅"
       - DIRECT
 
 rules:
-  - MATCH,住宅IP
+  - MATCH,IPRoyal住宅IP
