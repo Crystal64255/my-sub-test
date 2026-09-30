@@ -1,7 +1,18 @@
 proxies:
-  - name: "TEST-IPRoyal"
+  - name: "🇺🇸 IPRoyal-美国住宅"
     type: socks5
-    server: 1.2.3.4
-    port: 12345
-    username: "test"
-    password: "test"
+    server: 89.34.224.97
+    port: 12324
+    username: "14ad179fc228d"
+    password: "a3c78b5a31"
+    udp: true
+
+proxy-groups:
+  - name: "住宅IP"
+    type: select
+    proxies:
+      - "🇺🇸 IPRoyal-美国住宅"
+      - DIRECT
+
+rules:
+  - MATCH,住宅IP
