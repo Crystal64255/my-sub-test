@@ -1,0 +1,7 @@
+proxies:
+  - name: "TEST-IPRoyal"
+    type: socks5
+    server: 1.2.3.4
+    port: 12345
+    username: "test"
+    password: "test"
